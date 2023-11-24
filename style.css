@@ -1,0 +1,672 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #eed9c4;
+    height: 100%;
+    color: #333;
+    background: #eed9c4 url('images/grey-washed-wall.png') repeat;
+}
+
+/* HEADER */
+#vtopheader {
+    height: 10%;
+    margin-top: 0;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 2px solid #333;
+}
+
+#vtopheader p {
+    height: 50px;
+    bottom: 0;
+    width: 90%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    display: flex;
+    margin-left: 10%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'League Spartan', arial;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 8s steps(150) 1s 1 normal both;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #vtopheader p{
+        font-size: 90%;
+    }
+}
+
+#social-icons {
+    height: 50px;
+    bottom: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    width: auto;
+    right: 10%;
+}
+
+@media only screen and (max-width: 414px) {
+    .social-icon {
+        margin-right: 10%; 
+    }
+}
+
+.social-icon {
+    margin-right: 1rem;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+#linkedinLink {
+    margin-right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#instagramLink {
+    margin-right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#githubLink {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MIDDLE SECTION */
+#parentsection {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+#roundphoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vmin;
+    height: 30vmin;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10%;
+    margin-top: 0;
+    border: 2px solid grey;
+    transition: border 0.3s ease, transform 0.3s ease;
+}
+
+#roundphoto:hover {
+    border: 4px solid #0077b5;
+    transform: scale(1.2);
+}
+
+#roundphoto img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#smallbioparent {
+    width: 30%;
+    height: auto;
+    margin-right: 25%;
+    margin-top: 0%;
+}
+
+#headertext {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+#headertext p {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'League Spartan', arial;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#biotext {
+    font-size: 24px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    #headertext p {
+        font-size: 16px;
+        
+    }
+
+    #social-icons {
+        right: 5%;
+    }
+
+    #biotext {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 1137px) {
+    #biotext {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    #biotext {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 776px) {
+    #biotext {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 641px) {
+    #biotext {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 561px) {
+    #biotext {
+        font-size: 12px;
+    }
+}
+
+/* BOTTOM SECTION */
+#parentBottomsection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    margin-top: 10%;
+}
+
+#LeftDivbottom {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid black;
+    
+}
+
+#schoolname {
+    text-align: left;
+    justify-content: left;
+    height: 80%;
+    width: 50%;
+    float: left;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#navarro {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1150px) {
+    #navarro {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #navarro {
+        line-height: 2;
+        font-size: 40%;
+    }
+}
+
+#navarroyear {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1150px) {
+    #navarroyear {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 785px) {
+    #navarroyear {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #navarroyear {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #navarroyear {
+        line-height: 1.5;
+        font-size: 40%;
+    }
+}
+
+#TTU {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1150px) {
+    #TTU {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #TTU {
+        line-height: 2;
+        font-size: 40%;
+    }
+}
+
+#TTUyear {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1371px) {
+    #TTUyear {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    #TTUyear {
+        font-size: 55%;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    #TTUyear {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 882px) {
+    #TTUyear {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #TTUyear {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #TTUyear {
+        line-height: 1.5;
+        font-size: 40%;
+    }
+}
+
+#yearsattended {
+    width: 50%;
+    height: 80%;
+    float: left;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#MiddleDivbottom {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    font-family: sans-serif;
+    border: 2px solid black;
+}
+
+#MiddleDivbottom h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'League Spartan', arial;
+}
+
+#yearworking {
+    text-align: left;
+    justify-content: left;
+    height: 80%;
+    width: 50%;
+    float: left;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#CAEyear {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1150px) {
+    #CAEyear {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #CAEyear{
+        font-size: 40%;
+        line-height: 1.5;
+    }
+}
+
+#COMCyear {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+@media only screen and (max-width: 1150px) {
+    #COMCyear {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #COMCyear{
+        font-size: 40%;
+        line-height: 1.5;
+    }
+}
+
+#company {
+    width: 50%;
+    height: 80%;
+    float: left;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#CAEcompany {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1150px) {
+    #CAEcompany {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #CAEcompany{
+        font-size: 40%;
+        line-height: 1.5;
+    }
+}
+
+#COMCcompany {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1150px) {
+    #COMCcompany {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #COMCcompany{
+        font-size: 40%;
+        line-height: 1.5;
+    }
+}
+
+#RightDivbottom {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+#RightDivbottom h2 {
+    font-family: 'League Spartan', arial;
+    border-bottom: 2px solid black;
+}
+
+@media only screen and (max-width: 619px) {
+    #RightDivbottom h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #RightDivbottom h2 {
+        font-size: 60%;
+    }
+}
+
+#relevantcourses {
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#relevantcourses p {
+    margin: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-top: 2%;
+}
+
+@media only screen and (max-width: 1077px) {
+    #relevantcourses p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 504px) {
+    #relevantcourses p {
+        line-height: 0.9;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #relevantcourses p  {
+        line-height: 1.20;
+        margin-top: 5%;
+    }
+}
+
+#MiddleDivbottom h2 {
+    font-family: 'League Spartan', arial;
+    border-bottom: 2px solid black;
+}
+
+@media only screen and (max-width: 560px) {
+    #MiddleDivbottom h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #MiddleDivbottom h2 {
+        font-size: 90%;
+    }
+}
+
+#LeftDivbottom h2 {
+    font-family: 'League Spartan', arial;
+    border-bottom: 2px solid black;
+}
+
+@media only screen and (max-width: 587px) {
+    #LeftDivbottom h2 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #LeftDivbottom h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #LeftDivbottom h2 {
+        font-size: 90%;
+    }
+}
+
+/* FOOTER */
+#footparent {
+    margin-top: 10%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: space-between;
+    border-top: 2px solid black;
+}
+
+#copyright {
+    margin-left: 3%;
+    font-family: sans-serif;
+}
+
+#hireme {
+    background-color: #0077b5;
+    margin-right: 20%;
+    font-family: 'League Spartan', arial;
+    color: #333;
+    width: auto;
+    border: 2px solid #0d4d79;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, border 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactme {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    color: #eed9c4;
+}
+
+#hireme:hover {
+    background-color: #5c9ac4;
+    transform: translateY(5px);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #1f6694;
+}
+
+#hireme-link {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 587px) {
+    #footparent {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 712px) {
+    #relevantcourses p {
+        font-size: 12px;
+    }
+
+    #TTUyear {
+        font-size: 9px;
+    }
+}
